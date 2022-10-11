@@ -13,11 +13,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: assignment(),
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
       initialRoute: '/',
       routes: {
-        assignment.routeName:(context) => Booking(),
-        
+        '/': (context) => assignment(),
+        '/booking': (context) => Booking(),
       },
     );
   }

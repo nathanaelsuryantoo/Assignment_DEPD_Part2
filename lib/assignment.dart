@@ -177,7 +177,6 @@ class _assignmentState extends State<assignment> {
             Navigator.pushNamed(context, Booking.routeName);
           }, 
           label: Text("Book Now!"),
-          icon: Icon(Icons.book),
           )
     );
   }
